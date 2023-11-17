@@ -10,6 +10,8 @@
 - Code formatting tools like prettier
 - Security Scanning Tools: Tools like OWASP ZAP, Fortify, and Checkmarx help identify security vulnerabilities in the code.
 - Utilize Feature Flags: Implement feature toggling to manage and test new features without disrupting the main codebase.
+- Use nx for monorepo
+- Use observer pattern
 
 
 
