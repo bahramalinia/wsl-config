@@ -12,6 +12,7 @@
 - Utilize Feature Flags: Implement feature toggling to manage and test new features without disrupting the main codebase.
 - Use nx for monorepo
 - Use observer pattern
+- Use Cody with VSCode
 
 
 
