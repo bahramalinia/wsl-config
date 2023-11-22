@@ -13,8 +13,7 @@
 - Use nx for monorepo
 - Use observer pattern
 - Use Cody with VSCode
-
-
+- Write your scripts to automate things  
 
 # Daily
 - Prepare beforehand
