@@ -59,7 +59,10 @@
 - AWS tools?  
 - RabbitMq  
 - Terraform  
-- Chrome/Firefox  
+- Chrome/Firefox
+- Office
+- OneNote
+  
 
 ## Daily
 - Prepare beforehand
