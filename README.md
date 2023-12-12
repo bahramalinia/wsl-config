@@ -15,53 +15,51 @@
 - Use Cody with VSCode
 - Write your scripts to automate things
   
-## VSCode plugins
-====================
-Better Comments
-Draw.io integration
-WSL
-Auto Import
-Code GPT
-Cody AI
-Color Highlight
-Compare folders
-Docker
-ESLint
-GitLens
-Markdown Preview
-Path Intelligence
-Prettier
-stylint-plus
-Tabnince?
-TSLint (deprecated)
-YAML
-Remote SSH
-JavaScript code snippets
-React code snippets
+## VSCode plugins  
+- Better Comments  
+- Draw.io integration  
+- WSL  
+- Auto Import  
+- Code GPT  
+- Cody AI  
+- Color Highlight  
+- Compare folders  
+- Docker  
+- ESLint  
+- GitLens  
+- Markdown Preview  
+- Path Intelligence  
+- Prettier  
+- stylint-plus  
+- Tabnince?  
+- TSLint (deprecated)  
+- YAML  
+- Remote SSH  
+- JavaScript code snippets  
+- React code snippets  
 
 
-## Apps to install
-====================
-WSL
-Docker desktop
-VSCode
-GitBash
-CMder
-7Zip
-MobaXterm
-MongoDB Compass
-Postman
-NVM
-Python
-Chocolaty
-Notepad++
-Microsoft Visual Studio Community version
-LICEcap
-GitHub Desktop
-AWS tools?
-RabbitMq
-Terraform
-Chrome/Firefox
+## Apps to install    
+- WSL  
+- Docker desktop  
+- VSCode  
+- GitBash  
+- CMder  
+- 7Zip  
+- MobaXterm  
+- MongoDB Compass  
+- Postman  
+- NVM  
+- Python  
+- Chocolaty  
+- Notepad++  
+- Microsoft Visual Studio Community version  
+- LICEcap  
+- GitHub Desktop  
+- AWS tools?  
+- RabbitMq  
+- Terraform  
+- Chrome/Firefox  
 
 ## Daily
 - Prepare beforehand
