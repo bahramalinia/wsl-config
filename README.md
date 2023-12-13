@@ -65,10 +65,8 @@
 
 ## Organization  
 - set daily routine for specific actions (e.g., checking CI each morning, checking MRs integration/review, milestones, meetings, daily goals note taking, ...)
-  
-
-## Daily
-- Prepare beforehand
-- Be brief and clear
+- prepare onboarding for new comers
+- create design documentation
+- 
 
 
