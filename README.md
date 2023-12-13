@@ -62,6 +62,9 @@
 - Chrome/Firefox
 - Office
 - OneNote
+
+## Organization  
+- set daily routine for specific actions (e.g., checking CI each morning, checking MRs integration/review, milestones, meetings, daily goals note taking, ...)
   
 
 ## Daily
