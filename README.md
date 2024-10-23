@@ -20,6 +20,7 @@
 - Master copilot
 - Use daily.dev to stay up to date
 - Use wezterm as terminal tool
+- Use task management tool: Trello, also taskwriter is a fun command line tool 
   
 ## VSCode plugins  
 - Better Comments  
