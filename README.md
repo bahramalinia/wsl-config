@@ -19,6 +19,7 @@
 - Consider using Telepresense for local development
 - Master copilot
 - Use daily.dev to stay up to date
+- Use wezterm as terminal tool
   
 ## VSCode plugins  
 - Better Comments  
