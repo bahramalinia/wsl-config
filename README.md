@@ -1,6 +1,6 @@
 # Best Practices
 
-## Technical
+## Tools / methods
 
 - use WSL for building projects
 - use MR template  
@@ -8,12 +8,17 @@
 - SonarQube & ESLint
 - Performance profiling tools
 - Code formatting tools like prettier
-- Security Scanning Tools: Tools like OWASP ZAP, Fortify, and Checkmarx help identify security vulnerabilities in the code.
-- Utilize Feature Flags: Implement feature toggling to manage and test new features without disrupting the main codebase.
 - Use nx for monorepo
 - Use observer pattern
 - Use Cody with VSCode
 - Write your scripts to automate things
+- Use tldr
+- Consider using stern with kubernetes
+- Consider using k9s
+- Consider using kubeshark
+- Consider using Telepresense for local development
+- Master copilot
+- Use daily.dev to stay up to date
   
 ## VSCode plugins  
 - Better Comments  
@@ -39,7 +44,7 @@
 - React code snippets  
 
 
-## Apps to install    
+## Apps to install on Windows
 - WSL  
 - Docker desktop  
 - VSCode  
@@ -64,6 +69,7 @@
 - OneNote
 
 ## Organization  
+- Use Trello
 - set daily routine for specific actions (e.g., checking CI each morning, checking MRs integration/review, milestones, meetings, daily goals note taking, ...)
 - prepare onboarding for new comers
 - create design documentation
