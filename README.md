@@ -13,14 +13,18 @@
 - Use Cody with VSCode
 - Write your scripts to automate things
 - Use tldr
-- Consider using stern with kubernetes
-- Consider using k9s
-- Consider using kubeshark
-- Consider using Telepresense for local development
+- kubectl krew: to install kubernetes plugins
+- kubernetes stern
+- k9s: k8s with an interface
+- kubeshark: kubernetes api request analyzer and security check
+- Telepresense: for local development
 - Master copilot
-- Use daily.dev to stay up to date
-- Use wezterm as terminal tool
-- Use task management tool: Trello, also taskwriter is a fun command line tool 
+- daily.dev (to stay up to date with technology)
+- wezterm (terminal)
+- Trello, taskwriter: To Do tasks
+- Toggle Track: time tracking\
+- kubectl ctx # to easily switch between contexts
+- kubectl ns # to switch between name spaces
   
 ## VSCode plugins  
 - Better Comments  
