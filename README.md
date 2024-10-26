@@ -25,6 +25,8 @@
 - Toggle Track: time tracking\
 - kubectl ctx # to easily switch between contexts
 - kubectl ns # to switch between name spaces
+- kubeshark for network traffic inspection (paid) - or Istio (free version)
+- Argo CD for automatic deployment in Kubernetes [link](https://argo-cd.readthedocs.io/en/stable/)
   
 ## VSCode plugins  
 - Better Comments  
