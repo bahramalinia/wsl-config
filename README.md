@@ -27,6 +27,8 @@
 - kubectl ns # to switch between name spaces
 - kubeshark for network traffic inspection (paid) - or Istio (free version)
 - Argo CD for automatic deployment in Kubernetes [link](https://argo-cd.readthedocs.io/en/stable/)
+- fzf: fuzzy finder command line tool [link](https://github.com/junegunn/fzf)
+- bat: powerful user friendly alternative of 'cat' [link](https://github.com/sharkdp/bat)
   
 ## VSCode plugins  
 - Better Comments  
