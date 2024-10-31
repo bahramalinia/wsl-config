@@ -29,6 +29,7 @@
 - Argo CD for automatic deployment in Kubernetes [link](https://argo-cd.readthedocs.io/en/stable/)
 - fzf: fuzzy finder command line tool [link](https://github.com/junegunn/fzf)
 - bat: powerful user friendly alternative of 'cat' [link](https://github.com/sharkdp/bat)
+- bash-it 
   
 ## VSCode plugins  
 - Better Comments  
