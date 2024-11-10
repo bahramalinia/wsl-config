@@ -29,11 +29,14 @@
 - kubeshark for network traffic inspection (paid) - or Istio (free version)
 - Argo CD for automatic deployment in Kubernetes [link](https://argo-cd.readthedocs.io/en/stable/)
 - fzf: fuzzy finder command line tool [link](https://github.com/junegunn/fzf)
+- fd: better alternative to find [link](https://github.com/sharkdp/fd)
 - bat: powerful user friendly alternative of 'cat' [link](https://github.com/sharkdp/bat)
 - bash-it
 - Lens for kubernetes (paid)
 - Kubectx & kubens
 - Consider using a service mesh like Istio
+- use jq for better display of json logs or json files and search on them
+- use `htop`, and interactive process viewer
   
 ## VSCode plugins  
 - Better Comments  
