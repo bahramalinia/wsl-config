@@ -22,14 +22,18 @@
 - daily.dev (to stay up to date with technology)
 - wezterm (terminal)
 - Trello, taskwriter: To Do tasks
-- Toggle Track: time tracking\
+- Toggle Track: time tracking
+- Use `krew` as package manager for kubernetes
 - kubectl ctx # to easily switch between contexts
 - kubectl ns # to switch between name spaces
 - kubeshark for network traffic inspection (paid) - or Istio (free version)
 - Argo CD for automatic deployment in Kubernetes [link](https://argo-cd.readthedocs.io/en/stable/)
 - fzf: fuzzy finder command line tool [link](https://github.com/junegunn/fzf)
 - bat: powerful user friendly alternative of 'cat' [link](https://github.com/sharkdp/bat)
-- bash-it 
+- bash-it
+- Lens for kubernetes (paid)
+- Kubectx & kubens
+- Consider using a service mesh like Istio
   
 ## VSCode plugins  
 - Better Comments  
