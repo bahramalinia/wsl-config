@@ -1,6 +1,4 @@
-# Best Practices
-
-## Tools / methods
+## Tools 
 
 - use WSL for building projects
 - use MR template  
