@@ -1,0 +1,119 @@
+#!/usr/bin/env bash
+
+# Theme inspired on:
+#  - Ronacher's dotfiles (mitsuhikos) - http://github.com/mitsuhiko/dotfiles/tree/master/bash/
+#  - Glenbot - http://theglenbot.com/custom-bash-shell-for-development/
+#  - My extravagant zsh - http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/
+#  - Monokai colors - http://monokai.nl/blog/2006/07/15/textmate-color-theme/
+#  - Bash_it modern theme
+#
+# Screenshot: http://goo.gl/VCmX5
+# by Jesus de Mula <jesus@demula.name>
+
+# For the real Monokai colors you should add these to your .XDefaults or
+# terminal configuration:
+#! ----------------------------------------------------------- TERMINAL COLORS
+#! monokai - http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/
+#*background: #272822
+#*foreground: #E2DA6E
+#*color0: black
+#! mild red
+#*color1: #CD0000
+#! light green
+#*color2: #A5E02D
+#! orange (yellow)
+#*color3: #FB951F
+#! "dark" blue
+#*color4: #076BCC
+#! hot pink
+#*color5: #F6266C
+#! cyan
+#*color6: #64D9ED
+#! gray
+#*color7: #E5E5E5
+
+# ----------------------------------------------------------------- COLOR CONF
+D_DEFAULT_COLOR="${normal}"
+D_INTERMEDIATE_COLOR="${white}"
+D_USER_COLOR="${purple}"
+D_SUPERUSER_COLOR="${red}"
+D_MACHINE_COLOR="${cyan}"
+D_DIR_COLOR="${green}"
+D_SCM_COLOR="${yellow}"
+D_BRANCH_COLOR="${yellow}"
+D_CHANGES_COLOR="${white}"
+D_CMDFAIL_COLOR="${red}"
+D_VIMSHELL_COLOR="${cyan}"
+
+# ------------------------------------------------------------------ FUNCTIONS
+case $TERM in
+  xterm*)
+      TITLEBAR="\033]0;\w\007"
+      ;;
+  *)
+      TITLEBAR=""
+      ;;
+esac
+
+is_vim_shell() {
+  if [ ! -z "$VIMRUNTIME" ];
+  then
+    echo "${D_INTERMEDIATE_COLOR}on ${D_VIMSHELL_COLOR}\
+vim shell${D_DEFAULT_COLOR} "
+  fi
+}
+
+mitsuhikos_lastcommandfailed() {
+  code=$?
+  if [ $code != 0 ];
+  then
+    echo "${D_INTERMEDIATE_COLOR}exited ${D_CMDFAIL_COLOR}\
+$code ${D_DEFAULT_COLOR}"
+  fi
+}
+
+# vcprompt for scm instead of bash_it default
+demula_vcprompt() {
+  if [ ! -z "$VCPROMPT_EXECUTABLE" ];
+  then
+    local D_VCPROMPT_FORMAT="on ${D_SCM_COLOR}%s${D_INTERMEDIATE_COLOR}:\
+${D_BRANCH_COLOR}%b %r ${D_CHANGES_COLOR}%m%u ${D_DEFAULT_COLOR}"
+    $VCPROMPT_EXECUTABLE -f "$D_VCPROMPT_FORMAT"
+  fi
+}
+
+# checks if the plugin is installed before calling battery_charge
+safe_battery_charge() {
+  if _command_exists battery_charge ;
+  then
+    battery_charge
+  fi
+}
+
+# -------------------------------------------------------------- PROMPT OUTPUT
+# Function to parse the current Git branch
+parse_git_dirty () {
+  [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
+}
+parse_git_branch () {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+
+# Main prompt function
+prompt() {
+  PS1="${D_USER_COLOR}\u${D_INTERMEDIATE_COLOR}@${D_MACHINE_COLOR}\h${D_INTERMEDIATE_COLOR}:${D_DIR_COLOR}\w"
+  
+  # Add Git branch if in a Git repository
+  if [[ -n $(git branch 2> /dev/null) ]]; then
+    PS1+=" ${D_SCM_COLOR}(${D_BRANCH_COLOR}$(parse_git_branch)${D_SCM_COLOR})"
+  fi
+
+  # Finalize prompt
+  PS1+="${D_INTERMEDIATE_COLOR}$ ${D_DEFAULT_COLOR}"
+  PS2="${D_INTERMEDIATE_COLOR}$ ${D_DEFAULT_COLOR}"
+}
+
+
+
+# Runs prompt (this bypasses bash_it $PROMPT setting)
+safe_append_prompt_command prompt
